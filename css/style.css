@@ -1107,3 +1107,48 @@ section { padding: 5rem 0; }
   .page-banner { padding: 2.5rem 0 2rem; }
   .page-banner h1 { font-size: 2.5rem; }
 }
+
+/* ── Single Blog Post ─────────────────────────────────────── */
+.blog-post-page { padding: 3rem 0 5rem; }
+.blog-post-layout { max-width: 780px; }
+.blog-post-meta {
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.9rem;
+}
+.blog-post-meta .blog-card-tag {
+  background: var(--blue); color: var(--white); font-weight: 600;
+  font-size: 0.7rem; letter-spacing: 0.5px; text-transform: uppercase;
+  padding: 0.3rem 0.75rem; border-radius: 999px;
+}
+.blog-post-cover { margin-bottom: 2rem; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.blog-post-cover img { width: 100%; object-fit: cover; max-height: 520px; }
+.blog-post-cover figcaption { padding: 0.6rem 0.9rem; font-size: 0.8rem; color: var(--text-muted); background: var(--gray-light); }
+.blog-post-content { font-size: 1.05rem; line-height: 1.8; color: var(--text); }
+.blog-post-lead { font-size: 1.2rem; font-weight: 500; color: var(--blue-dark); margin-bottom: 1.5rem; }
+.blog-post-content p { margin-bottom: 1.25rem; }
+.blog-post-content h2 { color: var(--blue); font-size: 1.75rem; margin: 2.5rem 0 1rem; }
+.blog-post-content h3 { color: var(--blue); font-size: 1.25rem; margin: 2rem 0 0.75rem; }
+.blog-post-content blockquote {
+  border-left: 4px solid var(--yellow); background: var(--gray-light);
+  padding: 1rem 1.25rem; margin: 1.5rem 0; font-style: italic; color: var(--blue-dark);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.blog-post-divider { border: none; border-top: 1px solid var(--gray); margin: 2.5rem 0; }
+.blog-post-social { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+.blog-post-social a {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 1rem; border-radius: 999px; background: var(--gray-light);
+  color: var(--blue); font-size: 0.85rem; font-weight: 600; transition: var(--transition);
+}
+.blog-post-social a:hover { background: var(--yellow); color: var(--blue-dark); }
+.blog-post-back {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  margin-top: 2.5rem; font-weight: 600; color: var(--blue);
+}
+.blog-post-back:hover { color: var(--yellow-dark); }
+
+@media (max-width: 768px) {
+  .blog-post-content h2 { font-size: 1.4rem; }
+  .blog-post-lead { font-size: 1.05rem; }
+  .blog-post-content { font-size: 1rem; }
+}
