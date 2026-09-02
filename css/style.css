@@ -1123,6 +1123,9 @@ section { padding: 5rem 0; }
 .blog-post-cover { margin-bottom: 2rem; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 .blog-post-cover img { width: 100%; object-fit: cover; max-height: 520px; }
 .blog-post-cover figcaption { padding: 0.6rem 0.9rem; font-size: 0.8rem; color: var(--text-muted); background: var(--gray-light); }
+.blog-post-figure { margin: 2rem 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.blog-post-figure img { width: 100%; object-fit: cover; max-height: 480px; display: block; }
+.blog-post-figure figcaption { padding: 0.6rem 0.9rem; font-size: 0.8rem; color: var(--text-muted); background: var(--gray-light); }
 .blog-post-content { font-size: 1.05rem; line-height: 1.8; color: var(--text); }
 .blog-post-lead { font-size: 1.2rem; font-weight: 500; color: var(--blue-dark); margin-bottom: 1.5rem; }
 .blog-post-content p { margin-bottom: 1.25rem; }
